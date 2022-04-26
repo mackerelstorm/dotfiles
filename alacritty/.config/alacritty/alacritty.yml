@@ -1,0 +1,122 @@
+font:
+  normal:
+    family: "Hack Nerd Font"
+    style: Regular
+  bold:
+    family: "Hack Nerd Font"
+    style: Bold
+  italic:
+    family: "Hack Nerd Font"
+    style: Italic
+  bold_italic:
+    family: "Hack Nerd Font"
+    style: Bold Italic
+  size: 14
+
+
+# Colors 
+schemes:
+  Monokai: &monokai
+# Default colors
+    primary:
+      background: '#272822'
+      foreground: '#F8F8F2'
+# Normal colors
+    normal:
+      black:   '#272822'
+      red:     '#F92672'
+      green:   '#A6E22E'
+      yellow:  '#F4BF75'
+      blue:    '#66D9EF'
+      magenta: '#AE81FF'
+      cyan:    '#A1EFE4'
+      white:   '#F8F8F2'
+# Bright colors
+    bright:
+      black:   '#75715E'
+      red:     '#F92672'
+      green:   '#A6E22E'
+      yellow:  '#F4BF75'
+      blue:    '#66D9EF'
+      magenta: '#AE81FF'
+      cyan:    '#A1EFE4'
+      white:   '#F9F8F5'
+
+  VS-Code: &vscode
+# Default colors
+     primary:
+      background: '#1e1e1e' #Background from Dark Theme
+      foreground: '#cccccc'
+# Selection colors
+     selection:
+      text: CellForeground
+      background: '#565656'
+# Normal colors
+     normal:
+      black:   '#000000'
+      red:     '#cd3131'
+      green:   '#0dbc79'
+      yellow:  '#e5e510'
+      blue:    '#2472c8'
+      magenta: '#bc3fbc'
+      cyan:    '#11a8cd'
+      white:   '#e5e5e5'
+# Bright colors
+     bright:
+      black:   '#666666'
+      red:     '#f14c4c'
+      green:   '#23d18b'
+      yellow:  '#f5f543'
+      blue:    '#3b8eea'
+      magenta: '#d670d6'
+      cyan:    '#29b8db'
+      white:   '#e5e5e5'
+
+Cyberpunk-Neon: &cyberpunk
+
+ primary:
+    background: '0x000b1e'
+    foreground: '0x0abdc6'
+
+  # Colors that should be used to draw the terminal cursor. If these are unset,
+  # the cursor colour will be the inverse of the cell colour.
+  # cursor:
+  #   text: '0x2e2e2d'
+  #   # text: '0x000000'
+  #   cursor: '0xffffff'
+
+  # Normal colors
+ normal:
+    black:   '0x123e7c'
+    red:     '0xff0000'
+    green:   '0xd300c4'
+    yellow:  '0xf57800'
+    blue:    '0x123e7c'
+    magenta: '0x711c91'
+    cyan:    '0x0abdc6'
+    white:   '0xd7d7d5'
+
+  # Bright colors
+ bright:
+    black:   '0x1c61c2'
+    red:     '0xff0000'
+    green:   '0xd300c4'
+    yellow:  '0xf57800'
+    blue:    '0x00ff00'
+    magenta: '0x711c91'
+    cyan:    '0x0abdc6'
+    white:   '0xd7d7d5'
+
+  # dim colors
+ dim:
+    black:   '0x1c61c2'
+    red:     '0xff0000'
+    green:   '0xd300c4'
+    yellow:  '0xf57800'
+    blue:    '0x123e7c'
+    magenta: '0x711c91'
+    cyan:    '0x0abdc6'
+    white:   '0xd7d7d5'
+
+#Change color theme here:
+colors: *monokai
