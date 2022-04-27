@@ -5,7 +5,7 @@
 ```console
 git clone https://github.com/mackerelstorm/dotfiles
 cd dotfiles
-/dotfiles stow */
+stow */
 ```
 ## Requirements
 
