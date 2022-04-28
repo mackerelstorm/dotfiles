@@ -52,7 +52,7 @@ return packer.startup(function(use)
 	}
 
 	-- Colorschemes
-	use "tanvirtin/monokai.nvim"	
+	use "tanvirtin/monokai.nvim"
 	use "folke/tokyonight.nvim"
 
 	-- Autocompletion
@@ -63,12 +63,12 @@ return packer.startup(function(use)
 	use "saadparwaiz1/cmp_luasnip"
 	use "hrsh7th/cmp-nvim-lua"
 	use "hrsh7th/cmp-nvim-lsp"
-	
+
 	-- Snippets
 	use "L3MON4D3/LuaSnip"
 	use "rafamadriz/friendly-snippets"
 
-	-- LSP 
+	-- LSP
 	use "neovim/nvim-lspconfig"
 	use "williamboman/nvim-lsp-installer"
 
@@ -77,6 +77,11 @@ return packer.startup(function(use)
 		"nvim-treesitter/nvim-treesitter",
 		commit = "d180118c5c4d200da928b65532fe4f67d10a6584",
 		run = ":TSUpdate",
+	}
+	-- Telescopre
+	use {
+		"nvim-telescope/telescope.nvim",
+		commit = "d88094fbfd84b297178252230f6faf0e7d2f7650",
 	}
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

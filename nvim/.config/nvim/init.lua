@@ -5,4 +5,5 @@ require "user.lualine-config"
 require "user.cmp"
 require "user.lsp"
 require "user.treesitter"
+require "user.telescope"
 vim.cmd[[colorscheme tokyonight]]

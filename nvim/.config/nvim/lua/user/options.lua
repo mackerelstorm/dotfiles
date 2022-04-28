@@ -3,6 +3,13 @@ local options = {
 	number = true,
 	relativenumber = true,
 	termguicolors = true,
+	undofile = true,
+	expandtab = true,
+	shiftwidth = 4,
+	tabstop = 4,
+	wrap = false,
+	smartindent = true,
+	cursorline = true,
 }
 
 
