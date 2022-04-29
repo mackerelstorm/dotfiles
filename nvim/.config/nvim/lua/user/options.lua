@@ -10,6 +10,7 @@ local options = {
 	wrap = false,
 	smartindent = true,
 	cursorline = true,
+    splitbelow = true,
 }
 
 
