@@ -3,21 +3,16 @@ if not status_ok then
 	return
 end
 
-lsp_installer.on_server_ready(function(server)
-	local opts = {
-		on_attach = require("user.lsp.handlers").on_attach,
-		capabilities = require("user.lsp.handlers").capabilities,
-	}
+local lspconfig = require("lspconfig")
+lsp_installer.setup({})
 
-	if server.name == "sumneko_lua" then
-		local sumneko_opts = require("user.lsp.settings.sumneko_lua")
-		opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
-	end
-	--	if server.name == "eslint" then
-	--	local eslint_opts = require("user.lsp.settings.eslint")
-	--	opts = vim.tbl_deep_extend("force", eslint_opts, opts)
-	--end
 
-	server:setup(opts)
-end)
+local on_attach = require("user.lsp.handlers").on_attach
+local capabilities = require("user.lsp.handlers").capabilities
 
+
+lspconfig.sumneko_lua.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    settings = require("user.lsp.settings.sumneko_lua")
+})

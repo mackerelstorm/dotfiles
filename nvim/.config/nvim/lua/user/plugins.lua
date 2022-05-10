@@ -75,13 +75,11 @@ return packer.startup(function(use)
 	-- Treesitter
 	use {
 		"nvim-treesitter/nvim-treesitter",
-		commit = "d180118c5c4d200da928b65532fe4f67d10a6584",
 		run = ":TSUpdate",
 	}
 	-- Telescope
 	use {
 		"nvim-telescope/telescope.nvim",
-		commit = "d88094fbfd84b297178252230f6faf0e7d2f7650",
 	}
 
     -- Autopairs
