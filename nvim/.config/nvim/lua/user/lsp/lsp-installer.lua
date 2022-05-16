@@ -16,3 +16,28 @@ lspconfig.sumneko_lua.setup({
     capabilities = capabilities,
     settings = require("user.lsp.settings.sumneko_lua")
 })
+
+lspconfig.pyright.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+})
+
+lspconfig.clangd.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+})
+
+lspconfig.gopls.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+})
+
+lspconfig.rust_analyzer.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+})
+
+lspconfig.tsserver.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+})
