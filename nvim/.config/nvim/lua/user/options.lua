@@ -11,6 +11,7 @@ local options = {
 	smartindent = true,
 	cursorline = true,
     splitbelow = true,
+    laststatus = 3,
 }
 
 

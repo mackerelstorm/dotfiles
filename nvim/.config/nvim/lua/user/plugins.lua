@@ -84,6 +84,9 @@ return packer.startup(function(use)
 
     -- Autopairs
     use "windwp/nvim-autopairs"
+
+    -- NvimTree
+    use "kyazdani42/nvim-tree.lua"
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
