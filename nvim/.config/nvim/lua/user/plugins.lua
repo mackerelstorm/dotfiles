@@ -54,6 +54,8 @@ return packer.startup(function(use)
 	-- Colorschemes
 	use "tanvirtin/monokai.nvim"
 	use "folke/tokyonight.nvim"
+    use "navarasu/onedark.nvim"
+    use "olimorris/onedarkpro.nvim"
 
 	-- Autocompletion
 	use "hrsh7th/nvim-cmp"
@@ -87,6 +89,10 @@ return packer.startup(function(use)
 
     -- NvimTree
     use "kyazdani42/nvim-tree.lua"
+
+    -- Null-ls
+    use "jose-elias-alvarez/null-ls.nvim"
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
