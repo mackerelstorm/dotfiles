@@ -10,6 +10,7 @@ nullls.setup ({
             formatting.prettierd,
             diagnostics.eslint_d,
             formatting.rustfmt,
+            formatting.gofmt,
         },
     on_attach = function (client)
         if client.resolved_capabilities.document_formatting then

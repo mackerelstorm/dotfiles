@@ -9,6 +9,7 @@ local options = {
 	tabstop = 4,
 	wrap = false,
 	smartindent = true,
+    autoindent = true,
 	cursorline = true,
     splitbelow = true,
     laststatus = 3,
