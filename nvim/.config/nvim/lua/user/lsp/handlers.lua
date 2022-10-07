@@ -40,7 +40,7 @@ M.setup = function()
 end
 
 local function lsp_highlight_document(client)
-	if client.resolved_capabilities.document_highlight then
+	if client.server_capabilities.document_highlight then
 		vim.api.nvim_exec(
 		[[
 		augroup lsp_document_highlight
@@ -66,16 +66,16 @@ end
 M.on_attach = function(client, bufnr)
 	lsp_keymaps(bufnr)
 	lsp_highlight_document(client)
-    if client.name == "tsserver" then
-        client.resolved_capabilities.document_formatting = false
-    end
-    if client.name == "rust_analyzer" then
-        client.resolved_capabilities.document_formatting = false
-    end
+--    if client.name == "tsserver" then
+--        client.server_capabilities.document_formatting = false
+--    end
+--    if client.name == "rust_analyzer" then
+--        client.server_capabilities.document_formatting = false
+--    end
 
-    if client.name == "gopls" then
-        client.resolved_capabilities.document_formatting = false
-    end
+--    if client.name == "gopls" then
+--        client.server_capabilities.document_formatting = false
+--    end
 
 end
 

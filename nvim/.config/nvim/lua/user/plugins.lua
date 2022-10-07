@@ -46,16 +46,15 @@ return packer.startup(function(use)
 	use "nvim-lua/plenary.nvim"
 
 	--Lualine
-	use {
-		"nvim-lualine/lualine.nvim",
-		requires = { "kyazdani42/nvim-web-devicons", opt= true }
-	}
+	use	"nvim-lualine/lualine.nvim"
+	use	 "kyazdani42/nvim-web-devicons"
 
 	-- Colorschemes
 	use "tanvirtin/monokai.nvim"
 	use "folke/tokyonight.nvim"
     use "navarasu/onedark.nvim"
     use "olimorris/onedarkpro.nvim"
+    use {"catppuccin/nvim", as = "catppuccin"}
 
 	-- Autocompletion
 	use "hrsh7th/nvim-cmp"
@@ -71,8 +70,13 @@ return packer.startup(function(use)
 	use "rafamadriz/friendly-snippets"
 
 	-- LSP
-	use "neovim/nvim-lspconfig"
-	use "williamboman/nvim-lsp-installer"
+    use {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
+    }
+	--use "williamboman/nvim-lsp-installer"
+
 
 	-- Treesitter
 	use {
@@ -88,10 +92,17 @@ return packer.startup(function(use)
     use "windwp/nvim-autopairs"
 
     -- NvimTree
-    use "kyazdani42/nvim-tree.lua"
+    use {"kyazdani42/nvim-tree.lua",
+        branch = "3676e0b124c2a132857e2bbcf7f48f05228f1052"
+    }
 
     -- Null-ls
     use "jose-elias-alvarez/null-ls.nvim"
+
+    -- Toggleterm
+    use "akinsho/toggleterm.nvim"
+
+
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

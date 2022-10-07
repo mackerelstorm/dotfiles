@@ -13,11 +13,8 @@ local options = {
 	cursorline = true,
     splitbelow = true,
     laststatus = 3,
+    winbar = "%f",
 }
-
-
-
-
 
 for k, v in pairs(options) do
 	vim.opt[k] = v
