@@ -16,7 +16,7 @@ local on_attach = require("user.lsp.handlers").on_attach
 local capabilities = require("user.lsp.handlers").capabilities
 
 
-lspconfig.sumneko_lua.setup({
+lspconfig.lua_ls.setup({
     on_attach = on_attach,
     capabilities = capabilities,
     settings = require("user.lsp.settings.sumneko_lua")
@@ -47,6 +47,10 @@ lspconfig.tsserver.setup({
     capabilities = capabilities,
 })
 lspconfig.astro.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+})
+lspconfig.omnisharp.setup({
     on_attach = on_attach,
     capabilities = capabilities,
 })

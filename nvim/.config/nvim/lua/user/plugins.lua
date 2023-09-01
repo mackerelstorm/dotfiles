@@ -102,6 +102,9 @@ return packer.startup(function(use)
     -- Toggleterm
     use "akinsho/toggleterm.nvim"
 
+    -- Discord presence
+    use "andweeb/presence.nvim"
+
 
 
 	if PACKER_BOOTSTRAP then

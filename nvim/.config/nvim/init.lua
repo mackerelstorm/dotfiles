@@ -11,5 +11,6 @@ require "user.nvimtree"
 require "user.colorscheme"
 require "user.null-ls"
 require "user.toggleterm"
+require "user.discordpresence"
 
 
